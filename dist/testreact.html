@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="./testhtml.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="main">
+    <div class="header">
+      <nav>
+        <img src="/Images/logo.png" alt="logo" width="200px" height="100px" href="javascript:void(0);"
+          onclick="loadHomePage();" class="mr-5 hover:text-gray-900" />
+        <ul class="nav-links">
+          <li>
+            <a href="javascript:void(0);" onclick="loadcoursesPage();" class="mr-5 hover:text-gray-900">Learn</a>
+          </li>
+          <li>
+            <a href="javascript:void(0);" onclick="loadTestPage();" class="mr-5 hover:text-gray-900">Compete</a>
+          </li>
+          <li>
+            <a href="javascript:void(0);" onclick="loadLeaderPage();" class="mr-5 hover:text-gray-900">Leaderboard</a>
+          </li>
+          <li>
+            <a href="javascript:void(0);" onclick="loadInternPage();" class="mr-5 hover:text-gray-900">Internship</a>
+          </li>
+          <li class="btn" href="javascript:void(0);" id="Signupbutton" onclick="loadSignupPage();">
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="questions" style="margin-bottom: 100px;">
+      <h2 class="headin">React</h2>
+
+
+      <form type = "submit" class="form" id="reactquizform" style="margin-left: 80px;">
+        <div id="question1">
+          <p>1. What is React?</p>
+          <input type="radio" id="q1-option1" name="q1" value="A">
+          <label for="q1-option1">A. A programming language</label><br>
+          <input type="radio" id="q1-option2" name="q1" value="B">
+          <label for="q1-option2">B. A JavaScript library for building user interfaces</label><br>
+          <input type="radio" id="q1-option3" name="q1" value="C">
+          <label for="q1-option3">C. A development environment</label><br>
+          <input type="radio" id="q1-option4" name="q1" value="D">
+          <label for="q1-option4">D. A database management system</label><br>
+        </div>
+        <br>
+        <div id="question2">
+          <p>2. What is JSX in React?</p>
+          <input type="radio" id="q2-option1" name="q2" value="A">
+          <label for="q2-option1">A. A new version of JavaScript</label><br>
+          <input type="radio" id="q2-option2" name="q2" value="B">
+          <label for="q2-option2">B. JavaScript XML</label><br>
+          <input type="radio" id="q2-option3" name="q2" value="C">
+          <label for="q2-option3">C. A type of CSS styling</label><br>
+          <input type="radio" id="q2-option4" name="q2" value="D">
+          <label for="q2-option4">D. A new React component</label><br>
+        </div>
+        <br>
+        <div id="question3">
+          <p>3. What is the purpose of the "state" in React?</p>
+          <input type="radio" id="q3-option1" name="q3" value="A">
+          <label for="q3-option1">A. To manage external API requests</label><br>
+          <input type="radio" id="q3-option2" name="q3" value="B">
+          <label for="q3-option2">B. To store local variables in a component</label><br>
+          <input type="radio" id="q3-option3" name="q3" value="C">
+          <label for="q3-option3">C. To manage internal component data</label><br>
+          <input type="radio" id="q3-option4" name="q3" value="D">
+          <label for="q3-option4">D. To handle user events</label><br>
+        </div>
+        <br>
+        <div id="question4">
+          <p>4. What is the role of "props" in React?</p>
+          <input type="radio" id="q4-option1" name="q4" value="A">
+          <label for="q4-option1">A. To manage component styles</label><br>
+          <input type="radio" id="q4-option2" name="q4" value="B">
+          <label for="q4-option2">B. To handle user inputs</label><br>
+          <input type="radio" id="q4-option3" name="q4" value="C">
+          <label for="q4-option3">C. To pass data from parent to child components</label><br>
+          <input type="radio" id="q4-option4" name="q4" value="D">
+          <label for="q4-option4">D. To manage component state</label><br>
+        </div>
+        <br>
+        <div id="question5">
+          <p>5. In React, what is the purpose of the "componentDidMount" lifecycle method?</p>
+          <input type="radio" id="q5-option1" name="q5" value="A">
+          <label for="q5-option1">A. To update the component state</label><br>
+          <input type="radio" id="q5-option2" name="q5" value="B">
+          <label for="q5-option2">B. To handle user input events</label><br>
+          <input type="radio" id="q5-option3" name="q5" value="C">
+          <label for="q5-option3">C. To perform DOM manipulation</label><br>
+          <input type="radio" id="q5-option4" name="q5" value="D">
+          <label for="q5-option4">D. To fetch data from a remote endpoint</label><br>
+        </div>
+        <br>
+        <div id="question6">
+          <p>6. What is the purpose of "setState" in React?</p>
+          <input type="radio" id="q6-option1" name="q6" value="A">
+          <label for="q6-option1">A. To update the component's props</label><br>
+          <input type="radio" id="q6-option2" name="q6" value="B">
+          <label for="q6-option2">B. To perform side effects in a component</label><br>
+          <input type="radio" id="q6-option3" name="q6" value="C">
+          <label for="q6-option3">C. To modify the component's state</label><br>
+          <input type="radio" id="q6-option4" name="q6" value="D">
+          <label for="q6-option4">D. To handle user interactions</label><br>
+        </div>
+        <br>
+        <div id="question7">
+          <p>7. What is the purpose of "props.children" in React?</p>
+          <input type="radio" id="q7-option1" name="q7" value="A">
+          <label for="q7-option1">A. To access a child component's state</label><br>
+          <input type="radio" id="q7-option2" name="q7" value="B">
+          <label for="q7-option2">B. To pass components as props to other components</label><br>
+          <input type="radio" id="q7-option3" name="q7" value="C">
+          <label for="q7-option3">C. To render multiple components simultaneously</label><br>
+          <input type="radio" id="q7-option4" name="q7" value="D">
+          <label for="q7-option4">D. To render the content passed to a component</label><br>
+        </div>
+        <br>
+        <div id="question8">
+          <p>8. What is the purpose of "shouldComponentUpdate" in React?</p>
+          <input type="radio" id="q8-option1" name="q8" value="A">
+          <label for="q8-option1">A. To stop the component from updating</label><br>
+          <input type="radio" id="q8-option2" name="q8" value="B">
+          <label for="q8-option2">B. To perform a conditional rendering</label><br>
+          <input type="radio" id="q8-option3" name="q8" value="C">
+          <label for="q8-option3">C. To control the behavior of the component's rendering</label><br>
+          <input type="radio" id="q8-option4" name="q8" value="D">
+          <label for="q8-option4">D. To handle component errors</label><br>
+        </div>
+        <br>
+        <div id="question9">
+          <p>9. What is the purpose of "React.Fragment" in React?</p>
+          <input type="radio" id="q9-option1" name="q9" value="A">
+          <label for="q9-option1">A. To define a new React component</label><br>
+          <input type="radio" id="q9-option2" name="q9" value="B">
+          <label for="q9-option2">B. To add external HTML elements to a component</label><br>
+          <input type="radio" id="q9-option3" name="q9" value="C">
+          <label for="q9-option3">C. To group multiple elements without adding extra nodes to the DOM</label><br>
+          <input type="radio" id="q9-option4" name="q9" value="D">
+          <label for="q9-option4">D. To define a new React hook</label><br>
+        </div>
+        <br>
+        <div id="question10">
+          <p>10. What is the purpose of "key" in React lists?</p>
+          <input type="radio" id="q10-option1" name="q10" value="A">
+          <label for="q10-option1">A. To uniquely identify elements in a list</label><br>
+          <input type="radio" id="q10-option2" name="q10" value="B">
+          <label for="q10-option2">B. To sort the elements in a list</label><br>
+          <input type="radio" id="q10-option3" name="q10" value="C">
+          <label for="q10-option3">C. To group elements in a list</label><br>
+          <input type="radio" id="q10-option4" name="q10" value="D">
+          <label for="q10-option4">D. To filter elements in a list</label><br>
+        </div>
+        <br>
+        <div id="question11">
+          <p>11. What is the purpose of "React.memo" in React?</p>
+          <input type="radio" id="q11-option1" name="q11" value="A">
+          <label for="q11-option1">A. To render a memoized component</label><br>
+          <input type="radio" id="q11-option2" name="q11" value="B">
+          <label for="q11-option2">B. To create a new React hook</label><br>
+          <input type="radio" id="q11-option3" name="q11" value="C">
+          <label for="q11-option3">C. To optimize the performance of a component</label><br>
+          <input type="radio" id="q11-option4" name="q11" value="D">
+          <label for="q11-option4">D. To handle component errors</label><br>
+        </div>
+        <br>
+        <div id="question12">
+          <p>12. What is the purpose of "useEffect" in React?</p>
+          <input type="radio" id="q12-option1" name="q12" value="A">
+          <label for="q12-option1">A. To handle user input events</label><br>
+          <input type="radio" id="q12-option2" name="q12" value="B">
+          <label for="q12-option2">B. To manage component state</label><br>
+          <input type="radio" id="q12-option3" name="q12" value="C">
+          <label for="q12-option3">C. To perform side effects in a component</label><br>
+          <input type="radio" id="q12-option4" name="q12" value="D">
+          <label for="q12-option4">D. To create new components</label><br>
+        </div>
+        <br>
+        <div id="question13">
+          <p>13. What is the purpose of "useReducer" in React?</p>
+          <input type="radio" id="q13-option1" name="q13" value="A">
+          <label for="q13-option1">A. To manage component errors</label><br>
+          <input type="radio" id="q13-option2" name="q13" value="B">
+          <label for="q13-option2">B. To handle user interactions</label><br>
+          <input type="radio" id="q13-option3" name="q13" value="C">
+          <label for="q13-option3">C. To manage complex state logic in a component</label><br>
+          <input type="radio" id="q13-option4" name="q13" value="D">
+          <label for="q13-option4">D. To optimize component rendering</label><br>
+        </div>
+        <br>
+        <div id="question14">
+          <p>14. What is the purpose of "useContext" in React?</p>
+          <input type="radio" id="q14-option1" name="q14" value="A">
+          <label for="q14-option1">A. To handle component errors</label><br>
+          <input type="radio" id="q14-option2" name="q14" value="B">
+          <label for="q14-option2">B. To manage complex state logic in a component</label><br>
+          <input type="radio" id="q14-option3" name="q14" value="C">
+          <label for="q14-option3">C. To pass data through the component tree without having to pass props down manually at every level</label><br>
+          <input type="radio" id="q14-option4" name="q14" value="D">
+          <label for="q14-option4">D. To optimize component rendering</label><br>
+        </div>
+        <br>
+        <div id="question15">
+          <p>15. What is the purpose of "useCallback" in React?</p>
+          <input type="radio" id="q15-option1" name="q15" value="A">
+          <label for="q15-option1">A. To handle user interactions</label><br>
+          <input type="radio" id="q15-option2" name="q15" value="B">
+          <label for="q15-option2">B. To optimize component rendering</label><br>
+          <input type="radio" id="q15-option3" name="q15" value="C">
+          <label for="q15-option3">C. To manage component errors</label><br>
+          <input type="radio" id="q15-option4" name="q15" value="D">
+          <label for="q15-option4">D. To optimize the performance of a component by preventing unnecessary renders</label><br>
+        </div>
+        <br>
+        <input type="submit" value="Submit Test" class="button">
+    </form>
+    
+</div>
+<footer>
+  <div class="footer">
+    <div id="links">
+       <a href="javascript:void(0)" style="color:white; text-decoration: none;" onclick="loadHomePage();"> Home </a><br><br>
+       <a href="javascript:void(0)" style="color:white; text-decoration: none;" onclick="loadcoursesPage();"> Learn</a><br><br>
+       <a href="javascript:void(0)" style="color:white; text-decoration: none;" onclick="loadTestPage();"> Compete </a><br><br>
+       <a href="javascript:void(0)" style="color:white; text-decoration: none;" onclick="loadLeaderPage();"> Leaderboard </a> <br><br>
+       <a href="javascript:void(0)" style="color:white; text-decoration: none;" onclick="loadInternPage();"> Internships </a>
+    </div>
+    <div id="address">
+        500 Terry Francine St. <br><br>
+        San Francisco, CA 94158 <br><br><br><br>
+        Email : info@geexpro  .com <br><br>
+        Tel : 1-800-000-0000
+    </div>
+  
+    <div id="others">
+        <div id="faq">
+            About Us <br><br>
+            FAQ
+        </div>
+    </div>
+  
+    <div class="newsletter">
+        Recieve all our news and updates <br>
+        <form>
+            <label for="email"></label><br>
+            <input type="email" id="email" name="email" placeholder=" Email Address*" required><br><br>
+            <input type="submit" value="Subscribe Now" id="sub">
+          </form>
+          <br><br><br>
+        <div class="watermark">
+            <img src="./copyright-regular.svg" alt="">2023 by Geexpro <br> All rights reserved.
+        </div>
+    </div>
+  
+  </div>
+    </footer>
+
+
+    <script>
+      // Script to manipulate the button
+      var signupButton = document.getElementById("Signupbutton");
+      if (true) {
+        // Condition to check, replace with your own condition
+        signupButton.innerHTML = localStorage.getItem('username'); // Change the inner HTML of the button to "Name"
+      } else {
+        signupButton.innerHTML = "Value"; // Change the inner HTML of the button to "Value"
+      }
+    
+    </script>
+
+<!-- <script>
+  document.getElementById('quizform').addEventListener('submit', function(e) {
+      e.preventDefault(); // Prevent the form from submitting
+      let score = 0;
+      
+      // Check answers for question 1
+      if (document.getElementById('q1-option2').checked) {
+          score += 4;
+      }
+      
+      // Check answers for question 2
+      if (document.getElementById('q2-option3').checked) {
+          score += 4;
+      }
+      
+      // Check answers for question 3
+      if (document.getElementById('q3-option1').checked) {
+          score += 4;
+      }
+      
+      // Check answers for question 4
+      if (document.getElementById('q4-option3').checked) {
+          score += 4;
+      }
+      
+      // Check answers for question 5
+      if (document.getElementById('q5-option2').checked) {
+          score += 4;
+      }
+      
+      // Check answers for question 6
+      if (document.getElementById('q6-option3').checked) {
+          score += 4;
+      }
+      
+      // Check answers for question 7
+      if (document.getElementById('q7-option1').checked) {
+          score += 4;
+      }
+      
+      // Check answers for question 8
+      if (document.getElementById('q8-option3').checked) {
+          score += 4;
+      }
+      
+      // Check answers for question 9
+      if (document.getElementById('q9-option3').checked) {
+          score += 4;
+      }
+      
+      // Check answers for question 10
+      if (document.getElementById('q10-option1').checked) {
+          score += 4;
+      }
+      
+      // Check answers for question 11
+      if (document.getElementById('q11-option3').checked) {
+          score += 4;
+      }
+      
+      // Check answers for question 12
+      if (document.getElementById('q12-option3').checked) {
+          score += 4;
+      }
+      
+      // Check answers for question 13
+      if (document.getElementById('q13-option3').checked) {
+          score += 4;
+      }
+      
+      // Check answers for question 14
+      if (document.getElementById('q14-option3').checked) {
+          score += 4;
+      }
+      
+      // Check answers for question 15
+      if (document.getElementById('q15-option4').checked) {
+          score += 4;
+      }
+      
+      // Display the score
+      alert("Your score is: " + score);
+  });
+</script> -->
+<script>
+  function loadHomePage() {
+    window.location.href = "/src/HTML/home.html";
+  }</script>
+<script>
+  function loadcoursesPage() {
+    window.location.href = "/src/HTML/index.html";
+  }</script>
+<script>
+  function loadLeaderPage() {
+    window.location.href = "/dist/leaderbd.html";
+  }</script>
+<script>
+  function loadTestPage() {
+    window.location.href = "/src/HTML/Test.html";
+  }</script>
+<script>
+  function loadInternPage() {
+    window.location.href = "/src/HTML/Test.html";
+  }</script>
+<script>
+  function loadSignupPage() {
+    window.location.href = "/dist/Signup.html";
+  }</script>
+
+<script src="bundle.js"></script>
+
+<script type="module" src="/src/index.js"></script> 
+
+</body>
+</html>

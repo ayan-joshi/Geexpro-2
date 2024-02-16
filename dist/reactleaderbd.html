@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Leaderboard</title>
+  <link rel="stylesheet" type="text/css" href="/dist/htmlleaderbd.css" />
+</head>
+
+<body>
+  <div class="header">
+    <nav>
+      <img src="/Images/logo.png" alt="logo" width="200px" height="100px" href="javascript:void(0);"
+        onclick="loadHomePage();" class="mr-5 hover:text-gray-900" />
+      <ul class="nav-links">
+        <li>
+          <a href="javascript:void(0);" onclick="loadcoursesPage();" class="mr-5 hover:text-gray-900">Learn</a>
+        </li>
+        <li>
+          <a href="javascript:void(0);" onclick="loadTestPage();" class="mr-5 hover:text-gray-900">Compete</a>
+        </li>
+        <li>
+          <a href="javascript:void(0);" onclick="loadLeaderPage();" class="mr-5 hover:text-gray-900">Leaderboard</a>
+        </li>
+        <li>
+          <a href="javascript:void(0);" onclick="loadInternPage();" class="mr-5 hover:text-gray-900">Internship</a>
+        </li>
+        <li class="btn" href="javascript:void(0);" id="Signupbutton" onclick="loadSignupPage();">
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <script>
+    function loadHomePage() {
+      window.location.href = "g.html";
+    }
+  </script>
+  <script>
+    function loadSignupPage() {
+      window.location.href = "Signup.html";
+    }
+  </script>
+  <script>
+    function loadTestPage() {
+      window.location.href = "test.html";
+    }
+  </script>
+  </header>
+  </div>
+  <div class="leaderboard">
+    <h1>React Leaderboard</h1>
+    <br>  
+    <table>
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Name</th>
+          <th>Score</th>
+        </tr>
+      </thead>
+      <tbody id="leaderboardTableReact">
+        <!-- Leaderboard data will be inserted here using JavaScript -->
+      </tbody>
+    </table>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/9.6.5/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.5/firebase-database.js"></script>
+  <!-- <script src="leaderbd.js"></script> -->
+
+  <div>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-top">
+          <div>
+            <h6 class="footer-title">Courses</h6>
+            <ul class="footer-list">
+              <li class="footer-list-item">
+                <a href="#" class="footer-list-link">About</a>
+              </li>
+              <li class="footer-list-item">
+                <a href="#" class="footer-list-link">Careers</a>
+              </li>
+              <li class="footer-list-item">
+                <a href="#" class="footer-list-link">Affiliates</a>
+              </li>
+              <li class="footer-list-item">
+                <a href="#" class="footer-list-link">Sitemap</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h6 class="footer-title">Contact Us</h6>
+            <ul class="footer-list">
+              <li class="footer-list-item">
+                <a href="#" class="footer-list-link">Instagram</a>
+              </li>
+              <li class="footer-list-item">
+                <a href="#" class="footer-list-link">Twitter</a>
+              </li>
+              <li class="footer-list-item">
+                <a href="#" class="footer-list-link">Linked-in</a>
+              </li>
+              <li class="footer-list-item">
+                <a href="#" class="footer-list-link">Facebook</a>
+              </li>
+              <li class="footer-list-item">
+                <a href="#" class="footer-list-link">jadhavatharvaternaengg.ac.in</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h6 class="footer-title">Learn more</h6>
+            <ul class="footer-list">
+              <li class="footer-list-item">
+                <a href="#" class="footer-list-link">About</a>
+              </li>
+              <li class="footer-list-item">
+                <a href="#" class="footer-list-link">Careers</a>
+              </li>
+              <li class="footer-list-item">
+                <a href="#" class="footer-list-link">Affiliates</a>
+              </li>
+              <li class="footer-list-item">
+                <a href="#" class="footer-list-link">Sitemap</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <hr class="footer-divider" />
+
+        <div class="footer-bottom">
+          <span class="copyright">&copy; GEEXPRO. All rights reserved.</span>
+          <ul class="footer-list">
+            <li class="footer-list-item">
+              <a href="#" class="footer-list-link">
+                <i class="ri-facebook-circle-line"></i>
+              </a>
+            </li>
+            <li class="footer-list-item">
+              <a href="#" class="footer-list-link">
+                <i class="ri-instagram-line"></i>
+              </a>
+            </li>
+            <li class="footer-list-item">
+              <a href="#" class="footer-list-link">
+                <i class="ri-twitter-line"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="bundle.js"></script>
+  <script type="module" src="/src/index.js"></script>
+  <script>
+    function loadHomePage() {
+      window.location.href = "/src/HTML/home.html";
+    }</script>
+  <script>
+    function loadcoursesPage() {
+      window.location.href = "/src/HTML/courses.html";
+    }</script>
+  <script>
+    function loadLeaderPage() {
+      window.location.href = "/dist/leaderbd.html";
+    }</script>
+  <script>
+    function loadTestPage() {
+      window.location.href = "/src/HTML/Test.html";
+    }</script>
+  <script>
+    function loadInternPage() {
+      window.location.href = "/src/HTML/internship.html";
+    }</script>
+  <script>
+    function loadSignupPage() {
+      window.location.href = "/dist/Signup 2.html";
+    }</script>
+
+  <script>
+    var signupButton = document.getElementById("Signupbutton");
+    if (true) {
+      signupButton.innerHTML = localStorage.getItem('username');
+    } else {
+      signupButton.innerHTML = "Value";
+    }
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+body {
+  background-image: url(/Images/wxw2.jpg);
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: transparent; 
+}
+
+.container {
+  
+  padding: 20px 20px;
+  text-align: center;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 400px;
+  aspect-ratio: 16/9;
+}
+
+.signup-heading {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: white; 
+}
+
+.inputbox {
+  margin-bottom: 15px;
+}
+
+.inputbox input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  margin-right: 30px;
+}
+
+button {
+  background-color: black; 
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 25px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #333; 
+}
+
+.already {
+  font-size: 16px;
+  margin-top: 10px;
+  color: #fff;
+}
+
+
+
+

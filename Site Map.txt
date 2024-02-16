@@ -1,0 +1,70 @@
+- Home
+- About Us
+- Features
+  - Meaningful Connections
+    - Discussion Forums
+      - General Discussions
+      - Industry-specific Groups
+      - Learning Communities
+    - User Profiles
+    - Direct Messaging
+
+
+  - Aptitude Tests
+    - Test Descriptions
+      - Take a Test
+    - Test Results
+      - Strengths and Weaknesses Analysis
+      - Personalized Recommendations
+  - Internship Matching
+    - How It Works
+    - Internship Categories
+      - Category 1
+      - Category 2
+      - .. 
+    - Internship Listings
+    - Apply for Internships
+
+
+  - Continuous Learning
+    - Course Categories
+      - Personal Development
+      - Business & Finance
+      - Technology
+      - ...
+    - Course Listings
+      - Course 1
+      - Course 2
+      - ...
+    - Course Details
+      - Course Curriculum
+      - Instructor Information
+      - Reviews and Ratings
+- Courses
+  - Course Category 1
+    - Course 1
+    - Course 2
+    - ...
+  - Course Category 2
+    - Course 1
+    - Course 2
+    - ...
+  - ...
+- Internships
+  - Internship Category 1
+    - Internship 1
+    - Internship 2
+    - ...
+  - Internship Category 2
+    - Internship 1
+    - Internship 2
+    - ...
+  - ...
+- Blog
+  - Article 1
+  - Article 2
+  - ...
+- Contact Us
+  - Contact Information
+  - Support Form
+  - FAQs

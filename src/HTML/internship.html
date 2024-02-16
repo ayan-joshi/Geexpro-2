@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/Style/internship.css" />
+    <title>Internships</title>
+  </head>
+
+  <body>
+    <section class="img1">
+      <div class="header">
+        <nav>
+          <img
+            src="/Images/logo.png"
+            alt="logo"
+            width="200px"
+            height="100px"
+            href="javascript:void(0);"
+            onclick="loadHomePage();"
+            class="mr-5 hover:text-gray-900"
+          />
+          <ul class="nav-links">
+            <li>
+              <a
+                href="javascript:void(0);"
+                onclick="loadcoursesPage();"
+                class="mr-5 hover:text-gray-900"
+                >Learn</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void(0);"
+                onclick="loadTestPage();"
+                class="mr-5 hover:text-gray-900"
+                >Compete</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void(0);"
+                onclick="loadLeaderPage();"
+                class="mr-5 hover:text-gray-900"
+                >Leaderboard</a
+              >
+            </li>
+            <li>
+              <a
+                href="javascript:void(0);"
+                onclick="loadInternPage();"
+                class="mr-5 hover:text-gray-900"
+                >Internship</a
+              >
+            </li>
+            <!-- <li class="btn" href="javascript:void(0);" id="Signupbutton" onclick="loadSignupPage();">
+                  </li> -->
+          </ul>
+        </nav>
+      </div>
+      <div class="title">
+        <h1>Internships</h1>
+        <p class="textz1">Apply to a plethora of hiring opportunities</p>
+        <p class="textz2">& work with your dream companies!</p>
+      </div>
+      <div id="internship-list">
+        <!-- Internship cards will be dynamically generated here -->
+      </div>
+    </section>
+    <footer>
+      <div class="footer">
+        <div id="links">
+          <a
+            href="javascript:void(0)"
+            style="color: white; text-decoration: none"
+            onclick="loadHomePage();"
+          >
+            Home </a
+          ><br /><br />
+          <a
+            href="javascript:void(0)"
+            style="color: white; text-decoration: none"
+            onclick="loadcoursesPage();"
+          >
+            Learn</a
+          ><br /><br />
+          <a
+            href="javascript:void(0)"
+            style="color: white; text-decoration: none"
+            onclick="loadTestPage();"
+          >
+            Compete </a
+          ><br /><br />
+          <a
+            href="javascript:void(0)"
+            style="color: white; text-decoration: none"
+            onclick="loadLeaderPage();"
+          >
+            Leaderboard
+          </a>
+          <br /><br />
+          <a
+            href="javascript:void(0)"
+            style="color: white; text-decoration: none"
+            onclick="loadInternPage();"
+          >
+            Internships
+          </a>
+        </div>
+        <div id="address">
+          500 Terry Francine St. <br /><br />
+          San Francisco, CA 94158 <br /><br /><br /><br />
+          Email : info@geexpro .com <br /><br />
+          Tel : 1-800-000-0000
+        </div>
+
+        <div id="others">
+          <div id="faq">
+            About Us <br /><br />
+            FAQ
+          </div>
+        </div>
+
+        <div class="newsletter">
+          Recieve all our news and updates <br />
+          <form>
+            <label for="email"></label><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder=" Email Address*"
+              required
+            /><br /><br />
+            <input type="submit" value="Subscribe Now" id="sub" />
+          </form>
+          <br /><br /><br />
+          <div class="watermark">
+            <img src="./copyright-regular.svg" alt="" />2023 by Geexpro <br />
+            All rights reserved.
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/src/internship.js"></script>
+
+    <script>
+      function loadHomePage() {
+        window.location.href = "/src/HTML/home.html";
+      }
+    </script>
+    <script>
+      function loadcoursesPage() {
+        window.location.href = "/src/HTML/courses.html";
+      }
+    </script>
+    <script>
+      function loadLeaderPage() {
+        window.location.href = "/dist/leaderbd.html";
+      }
+    </script>
+    <script>
+      function loadTestPage() {
+        window.location.href = "/src/HTML/Test.html";
+      }
+    </script>
+    <script>
+      function loadInternPage() {
+        window.location.href = "/src/HTML/internship.html";
+      }
+    </script>
+    <script>
+      function loadSignupPage() {
+        window.location.href = "/dist/Signup.html";
+      }
+    </script>
+
+    <script>
+      // Script to manipulate the button
+      var signupButton = document.getElementById("Signupbutton");
+      if (true) {
+        // Condition to check, replace with your own condition
+        signupButton.innerHTML = localStorage.getItem("username"); // Change the inner HTML of the button to "Name"
+      } else {
+        signupButton.innerHTML = "Value"; // Change the inner HTML of the button to "Value"
+      }
+    </script>
+  </body>
+</html>
